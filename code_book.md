@@ -9,9 +9,9 @@ This code book illustrate the process of the data cleaning. The majority of the 
 The work directory at the beginning of the code has been set as the author's local directory. When run this code, the reviewer should change the directory to the local directory where UCI HAR Dataset is.
 
 # Variables
--train_label: imported raw training data label
--x_train_dat: imported raw training dataset for x
-y_train_dat: imported raw training dataset for y
+*train_label: imported raw training data label
+*x_train_dat: imported raw training dataset for x
+*y_train_dat: imported raw training dataset for y
 test_label: imported raw testing data label
 x_test_dat: imported raw testing dataset for x
 y_test_dat: imported raw testing dataset for y
