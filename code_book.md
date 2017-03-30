@@ -9,6 +9,7 @@ This code book illustrate the process of the data cleaning. The majority of the 
 The work directory at the beginning of the code has been set as the author's local directory. When run this code, the reviewer should change the directory to the local directory where UCI HAR Dataset is.
 
 # Variables
+
 * train_label: imported raw training data label;
 * x_train_dat: imported raw training dataset for x;
 * y_train_dat: imported raw training dataset for y;
@@ -27,4 +28,22 @@ The work directory at the beginning of the code has been set as the author's loc
 
 # Cleaning Procedure Description
 
-
+* Setting working directory root drive
+* Specify the libraries needed for the rest of the code
+* Clear work space of any variable from previous executions
+* Raw data import
+* Imported data verification
+* Extracts only the measurements on the mean and standard deviation for each measurement
+ * find the idex of the items with mean and std within the variable name
+ * make sure that there is no variable name with both mean and std in it
+ * filter the data based on the index
+ * name the features extracted
+* Use descriptive activity names to name the activities in the data set
+ * getting the library for numer to expression conversion
+ * efficiently convert y from vector to expression list
+ * name the converted y_dat
+* Appropriately label the data set with descriptive activity names
+* Organizing and combining all data sets into single one
+* Defining descriptive names for all variables
+* Creates a second, independent tidy data set with the average of each variable for each activity and each subject
+* Export the finished txt file
